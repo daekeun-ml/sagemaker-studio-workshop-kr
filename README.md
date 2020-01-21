@@ -5,7 +5,7 @@
 
 이에, AWS에서는 ML 워크플로를 쉽고 빠르게 구축하고자 하는 데이터 사이언티스트 및 ML 엔지니어 분들을 위해 SageMaker Studio Hands-on Lab을 준비했습니다. 이 워크샵을 통해 SageMaker Studio상에서 notebook instance를 생성하고 샘플 Jupyter notebook을 실습하면서 SageMaker의 기능들을 알아보도록 합니다. 
 
-실습은 총 4개 모듈로 구성되어 있으며, 1번 완료 후 2번을 순서대로 진행하셔야 합니다. 3번, 4번 모듈은 원하는 순서대로 진행하실 수 있습니다.
+실습은 총 4개 모듈로 구성되어 있으며, 1번 모듈 완료 후 2번 모듈을 순서대로 진행하셔야 합니다. 3번, 4번 모듈은 원하는 순서대로 진행하실 수 있습니다.
 
 
 ### Requirements 
@@ -13,24 +13,23 @@
 - Browser: 최신 버전의 **Chrome, Firefox**를 사용하세요.
 - 주의 사항:  Notebook 안의 Cell에서 코드 실행후 결과 값이 나오는 데는 수 초가 걸리며, 훈련 Job을 실행하는 경우 수 분에서 수십 분이 걸릴 수도 있습니다. 
 
-
 ## Agenda
 
 ### Module 1. SageMaker Studio
 SageMaker Studio를 시작해 봅니다. 
-- [AWS 계정 미보유 시: Getting Started](sagemaker-experiments/mnist-handwritten-digits-classification-experiment.ipynb)
+- [Getting Started](sagemaker-experiments/mnist-handwritten-digits-classification-experiment.ipynb)
 
 ### Module 2. SageMaker Autopilot
 탐색적 데이터 분석(EDA), 피쳐 엔지니어링, 파이프라인 추천, 하이퍼파라메터 튜닝을 자동으로 수행하는 완전 관리형 AutoML 서비스인 Amazon SageMaker Autopilot을 사용하여 고객 이탈 예측 모델을 자동으로 생성해 봅니다.
-- [MNIST Handwritten Digits Classification Experiment](sagemaker-experiments/mnist-handwritten-digits-classification-experiment.ipynb)
+- [Getting Started](autopilot/lab2.md)
 
 ### Module 3. SageMaker Debugger
 학습 중 실시간으로 디버그 후크(Debug Hook)로 캡처된 텐서를 분석하고 이상점들을 확인하여 모델의 문제를 감지할 수 있는 Amazon Sagemaker Debugger를 사용하여 손글찌 숫자 인식 모델을 MNIST 데이터셋과 TensorFlow로 학습해 봅니다.
-- [Using a built-in rule with TensorFlow](sagemaker-debugger/tensorflow_builtin_rule/tf-mnist-builtin-rule.ipynb)
+- [Getting Started](debugger/tensorflow_builtin_rule/tf-mnist-builtin-rule.ipynb)
 
 ### Module 4. SageMaker Model Monitor
 모델 배포 이후 데이터 드리프트, 휴먼 에러 등으로 인해 데이터 품질이 변하는 것을 실시간으로 모니터링하는 SageMaker Model Monitor 서비스를 사전 학습된 고객 이탈 예측 모델에 대해 실습해 봅니다.
-- [Introduction to Amazon SageMaker Model Monitor](sagemaker-model-monitor/SageMaker-ModelMonitoring.ipynb)
+- [Getting Started](model-monitor/SageMaker-ModelMonitoring.ipynb)
 
 ## License Summary
 이 샘플 코드는 MIT-0 라이센스에 따라 제공됩니다. LICENSE 파일을 참조하십시오.

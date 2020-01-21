@@ -147,7 +147,6 @@ Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나
 
 1. `dpp[0~9 중 가장 작은 숫자]-xgboost`와 `dpp[0-9중 가장 작은 숫자]-linear-learner`를 제외한 모든 Code Cell을 삭제합니다. (예: `dpp0-xgboost`와 `dpp2-linear-learner`만 미삭제) 
 (예: `dpp0-xgboost`, `dpp1-xgboost`, `dpp2-linear-learner`, `dpp3-xgboost`, `dpp4-linear-learner`,.. 중 `dpp0-xgboost`와 `dpp2-linear-learner`를 제외하고 모두 삭제)
-<br>
 아래 `Figure 13.`은 `dpp3-xgboost` Code Cell을 삭제하는 예시이며, `Edit-Delete Cells (단축키 D,D)`로 삭제하거나 `가위 아이콘`을 클릭하여 Code Cell을 삭제합니다.
 
     ![img13](./images/fig13.png)

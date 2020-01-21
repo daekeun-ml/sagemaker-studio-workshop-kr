@@ -114,6 +114,9 @@ Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나
 ---
 자동으로 생성된 Jupyter 노트북들을 살펴본 후, Candidate generation notebook을 수정하여 피쳐 엔지니어링(Feature Engineering)-모델링(Modeling)-하이퍼파라메터 최적화(Hyperparameter Optimization) 과정을 자동으로 수행해 보겠습니다.
 
+참고로 본 step은 약 30분 소요됩니다.
+
+
 1. `Figure 7.` 우측 상단에 `Open data exploration notebook`을 클릭하여 Jupyter 노트북을 실행합니다. (`Figure 8.` 참조)<br>
 이 노트북 파일은 탐색적 데이터 분석(EDA)을 자동으로 수행한 내역이 저장되어 있으며, 우측 상단의 `Import notebook` 버튼을 클릭 후 노트북 사본을 생성하여 자유롭게 내용 수정이 가능합니다. 
 
@@ -126,14 +129,8 @@ Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나
 
 1. Data exploration 노트북을 모두 살펴보았다면, `Figure 7.` 우측 상단의 `Open candidate generation notebook`을 클릭하여 Jupyter 노트북을 실행합니다. (`Figure 10.` 참조)<br>
 이 노트북 파일은 Autopilot을 수행하기 위한 코드가 저장되어 있으며, 우측 상단의 `Import notebook` 버튼을 클릭 후 노트북 사본을 생성하여 자유롭게 내용 수정이 가능합니다. 핸즈온을 위해 우측 상단의 `Import notebook` 버튼을 클릭하여 노트북 사본을 생성합니다. 
-<br>
-참고로, Step 2.의 Create Amazon SageMaker Autopilot Experiment 창의 Do you want to run a complete experiment? 에서 `Yes` 선택 시에는 이 노트북 내의 코드들이 자동으로 수행됩니다.
 
-    ![img10](./images/fig10.png)
-    **<center>Figure 10. Candidate Definition notebook 화면 2.</center>**   
-
-1.
-참고로, Step 2.의 Create Amazon SageMaker Autopilot Experiment 창의 Do you want to run a complete experiment? 에서 `Yes` 선택 시에는 이 노트북 내의 코드들이 자동으로 수행됩니다.
+1. 참고로, `Step 2.`의 Create Amazon SageMaker Autopilot Experiment 창의 Do you want to run a complete experiment? 에서 `Yes` 선택 시에는 이 노트북 내의 코드들이 자동으로 수행됩니다.
 
     ![img10](./images/fig10.png)
     **<center>Figure 10. Candidate Definition notebook 화면 2.</center>**   
@@ -204,6 +201,8 @@ Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나
 여러분은 데이터셋, 알고리즘, 하이퍼파라메터(hyper-parameters) 및 평가 지표(metrics)들을 포함한 실험의 아티팩트(artifacts)를 SageMaker Experiment로 추적할 수 있습니다. SageMaker Autopilot은 SageMaker Experiment가 포함되어 있기 때문에 별도의 설정 없이 SageMaker Experiment를 쉽게 체험해 보실 수 있습니다.
 
 본 핸즈온랩에서는 하이퍼파라메터 튜닝 시 개별 생성된 Trial들을 쉽게 interactive 툴로 visualize하는 방법을 수행해 보겠습니다.
+
+참고로 본 step은 약 5-10분 소요됩니다.
 
 1. Code Cell 왼쪽의 “[*]” 라는 부분이 숫자로 변경되면 좌측의 플라스크 아이콘을 클릭 후, 
 `Unassigned trial components`에 마우스 커서를 위치하고 오른쪽 버튼을 클릭하여 `Open in trial component list`를 선택합니다. (`Figure 19.` 참조)

@@ -1,26 +1,27 @@
 # Module 2. SageMaker Autopilot
 
-이 모듈에서는 SageMaker Studio IDE 상에서 Churn prediction 데이터셋을 SageMaker Autopilot으로 쉽게 빠르고 모델링할 수 있는 방법에 대해 실습해 보겠습니다.
+이 모듈에서는 SageMaker Studio IDE 상에서 Churn prediction 데이터셋을 SageMaker Autopilot으로 쉽고 빠르게 모델링할 수 있는 방법에 대해 실습해 보겠습니다.
+본 모듈의 총 실습 시간은 약 1시간 소요입니다.
 
 ### 목차
 - Step 1. 데이터셋 준비 및 S3 업로드
-- Step 2. Autopilot 설정하기
+- Step 2. SageMaker Autopilot 설정하기
 - Step 3. SageMaker Autopilot 체험하기
 - Step 4. SageMaker Experiment 체험하기 
 - Optional Step. 모델 배포 및 SageMaker Model Monitor 체험하기
 
 Churn Prediction 데이터셋에 대한 자세한 내용은 아래를 참조하세요.
+
 - Paper: https://www.erpublication.org/published_paper/IJETR032129.pdf
 - Dataset URL: http://dataminingconsultant.com/DKD2e_data_sets.zip
 
-
 <br>
 
-## Step 1. 데이터셋 준비 및 S3 업로드 
+## Step 1. 데이터셋 준비 및 S3 업로드
 ---
-Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나 txt 포맷의 정형 데이터셋을 준비 후 데이터셋을 학습셋/검증셋(Training set/Validation set)으로 분리하여 S3에 업로드합니다. `Step 1.`에서 이 작업을 수행해 보겠습니다.
+SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나 txt 포맷의 정형 데이터셋을 준비 후 데이터셋을 학습셋/검증셋(Training set/Validation set)으로 분리하여 S3에 업로드합니다. 본 step에서 이 작업을 수행해 보겠습니다.
 
-참고로 본 step은 약 5분 소요됩니다.
+실습 시간은 약 5분 소요됩니다.
 
 1. SageMaker Studio 메뉴에서 왼쪽 상단의 아이콘 중 폴더 모양의 아이콘을 클릭하여 
 `sagemaker-studio-workshop-kr/autopilot` 경로로 이동합니다.
@@ -37,7 +38,7 @@ Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나
     ![img3](./images/fig03.png)
     **<center>Figure 3. step1-prepare-dataset.ipynb Jupyter notebook 화면.</center>**    
 
-1. Jupyter notebook 은 코드와 주석을 같이 저장하며, 두 가지의 Cell(Code Cell 과 Markdown Cell)이 있습니다. Code 를 실행하려면 `Figure 3-1.`을 참조하여 실행 버튼을 클릭하거나, 키보드 단축키
+1. Jupyter 노트북은 코드와 주석을 같이 저장하며, 두 가지의 Cell(Code Cell 과 Markdown Cell)이 있습니다. Code 를 실행하려면 `Figure 3-1.`을 참조하여 실행 버튼을 클릭하거나, 키보드 단축키
 `Control+Enter`나 `Control+Enter`를 실행합니다. 참고로 본 핸즈온 랩은 실제 사용하는 실행 후 셀을 이동하는 `Shift+Enter` 단축키를 권장합니다.
 
     ![img3-1](./images/fig03-1.png)
@@ -60,12 +61,11 @@ Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나
     **<center>Figure 3-3. Code Cell 실행 완료 화면.</center>**    
 
 
-## Step 2. Autopilot 설정하기
+## Step 2. SageMaker Autopilot 설정하기
 ---
-데이터가 준비되었다면, 여러분은 One-click으로 Autopilot을 쉽게 시작할 수 있습니다. 이번 step에서 이를 수행해 보겠습니다. 
+데이터가 준비되었다면, 여러분은 One-click으로 SageMaker Autopilot을 쉽게 시작할 수 있습니다. 본 step에서 이 작업을 수행해 보겠습니다. 
 
-참고로 본 step은 약 5-10분 소요됩니다.
-
+실습 시간은 약 5-10분 소요됩니다.
 
 1. SageMaker Studio 화면의 왼쪽 상단의 아이콘 중 컵 모양의 아이콘 클릭 후, `Create Experiment` 버튼을 클릭합니다. (`Figure 4.` 참조)
 
@@ -114,7 +114,7 @@ Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나
 ---
 자동으로 생성된 Jupyter 노트북들을 살펴본 후, Candidate generation notebook을 수정하여 피쳐 엔지니어링(Feature Engineering)-모델링(Modeling)-하이퍼파라메터 최적화(Hyperparameter Optimization) 과정을 자동으로 수행해 보겠습니다.
 
-참고로 본 step은 약 30분 소요됩니다.
+실습 시간은 약 30분 소요됩니다.
 
 
 1. `Figure 7.` 우측 상단에 `Open data exploration notebook`을 클릭하여 Jupyter 노트북을 실행합니다. (`Figure 8.` 참조)<br>
@@ -123,12 +123,12 @@ Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나
     ![img8](./images/fig08.png)
     **<center>Figure 8. Data exploration notebook 화면 1.</center>**   
 
-1. 노트북의 Code Cell과 Markdown Cell을 살펴봅니다. Autopilot은 수치형(Numerical) 변수의 cardinality가 낮다면 자동으로 범주형(Categorical) 변수로 간주하는 것을 알 수 있습니다. 참고로 범주형 변수에 대한 전처리도 Autopilot에서 자동으로 수행하기 때문에 별도의 수치 변환 인코딩이나 원핫(One-hot) 인코딩을 수행하실 필요가 없습니다.
+1. 노트북의 Code Cell과 Markdown Cell을 살펴봅니다. SageMaker Autopilot은 수치형(Numerical) 변수의 cardinality가 낮다면 자동으로 범주형(Categorical) 변수로 간주하는 것을 알 수 있습니다. 참고로 범주형 변수에 대한 전처리도 SageMaker Autopilot에서 자동으로 수행하기 때문에 별도의 수치 변환 인코딩이나 원핫(One-hot) 인코딩을 수행하실 필요가 없습니다.
     ![img9](./images/fig09.png)
     **<center>Figure 9. Data exploration notebook 화면 2.</center>**   
 
 1. Data exploration 노트북을 모두 살펴보았다면, `Figure 7.` 우측 상단의 `Open candidate generation notebook`을 클릭하여 Jupyter 노트북을 실행합니다. (`Figure 10.` 참조)<br>
-이 노트북 파일은 Autopilot을 수행하기 위한 코드가 저장되어 있으며, 우측 상단의 `Import notebook` 버튼을 클릭 후 노트북 사본을 생성하여 자유롭게 내용 수정이 가능합니다. 핸즈온을 위해 우측 상단의 `Import notebook` 버튼을 클릭하여 노트북 사본을 생성합니다. 
+이 노트북 파일은 SageMaker Autopilot을 수행하기 위한 코드가 저장되어 있으며, 우측 상단의 `Import notebook` 버튼을 클릭 후 노트북 사본을 생성하여 자유롭게 내용 수정이 가능합니다. 핸즈온을 위해 우측 상단의 `Import notebook` 버튼을 클릭하여 노트북 사본을 생성합니다. 
 
 1. 참고로, `Step 2.`의 Create Amazon SageMaker Autopilot Experiment 창의 Do you want to run a complete experiment? 에서 `Yes` 선택 시에는 이 노트북 내의 코드들이 자동으로 수행됩니다.
 
@@ -199,9 +199,9 @@ Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나
 ---
 여러분은 데이터셋, 알고리즘, 하이퍼파라메터(hyper-parameters) 및 평가 지표(metrics)들을 포함한 실험의 아티팩트(artifacts)를 SageMaker Experiment로 추적할 수 있습니다. SageMaker Autopilot은 SageMaker Experiment가 포함되어 있기 때문에 별도의 설정 없이 SageMaker Experiment를 쉽게 체험해 보실 수 있습니다.
 
-본 핸즈온랩에서는 하이퍼파라메터 튜닝 시 개별 생성된 Trial들을 쉽게 interactive 툴로 visualize하는 방법을 수행해 보겠습니다.
+본 step에서 하이퍼파라메터 튜닝 시 개별 생성된 Trial들을 쉽게 interactive 툴로 visualize하는 방법을 수행해 보겠습니다.
 
-참고로 본 step은 약 5-10분 소요됩니다.
+실습 시간은 약 5-10분 소요됩니다.
 
 1. Code Cell 왼쪽의 “[*]” 라는 부분이 숫자로 변경되면 좌측의 플라스크 아이콘을 클릭 후, 
 `Unassigned trial components`에 마우스 커서를 위치하고 오른쪽 버튼을 클릭하여 `Open in trial component list`를 선택합니다. (`Figure 19.` 참조)
@@ -246,7 +246,7 @@ Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나
 
 ## Optional Step. 모델 배포 및 SageMaker Model Monitor 체험하기
 ---
-본 step은 10분 가량의 추가 시간이 요구되며, 필수 항목은 아닙니다.
+본 step은 10분 가량의 추가 실습 시간이 요구되며, 필수 항목은 아닙니다.
 핸즈온랩에 여유 시간이 있을 때만 수행하시면 됩니다. 
 
 1. Candidate generation notebook의 마지막 Code Cell을 실행합니다. 해당 Cell의 코드는
@@ -274,5 +274,4 @@ Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나
     **<center>Figure 25. SageMaker Model Monitor Jupyter 노트북 화면.</center>**  
 
 수고하셨습니다. 이상으로 본 모듈의 실습 과정을 마무리 하셨습니다. 워크샵 이후 발생되는
-비용을 방지하기 위해 서비스 종료 가이드를 통해 사용하신 리소스들을 모두 종료/삭제 해주십시오.    
-
+비용을 방지하기 위해 서비스 종료 가이드를 통해 사용하신 리소스들을 모두 종료/삭제 해주십시오.

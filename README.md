@@ -7,15 +7,14 @@
 
 실습은 총 4개 모듈로 구성되어 있으며, 1번 모듈 완료 후 2번 모듈을 순서대로 진행하셔야 합니다. 3번, 4번 모듈은 원하는 순서대로 진행하실 수 있습니다.
 
-
 ### Requirements 
 - AWS Region: **Ohio** (필수)
 - Browser: 최신 버전의 **Chrome, Firefox**를 사용하세요.
-- 주의 사항: 노트북(Notebook) 안의 Cell에서 코드 실행 후 결과 값이 나오는 데는 수 초가 걸리며, 훈련 Job을 실행하는 경우 수 분에서 수십 분이 걸릴 수도 있습니다. 
+- 주의 사항: 노트북(Notebook) 안의 Code Cell에서 코드 실행 후 결과 값이 나오는 데는 수 초가 걸리며, 훈련 Job을 실행하는 경우 수 분에서 수십 분이 걸릴 수도 있습니다. 
 
 ## Agenda
 
-### Module 1. Amazon SageMaker Studio
+### Module 1. Getting Started with Amazon SageMaker Studio
 Amazon SageMaker Studio IDE(Integrated Development Environment)를 시작해 봅니다.
 - [Getting Started](studio/lab1.md)
 

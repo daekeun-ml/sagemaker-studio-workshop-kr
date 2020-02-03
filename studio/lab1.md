@@ -1,6 +1,6 @@
-# Module 1. Getting Started with SageMaker Studio
+# Module 1. Getting Started with Amazon SageMaker Studio
 
-이 모듈에서는 SageMaker Studio IDE(Integrated Development Environment)를 시작해 봅니다. 실습 시간은 약 10분 소요됩니다.
+이 모듈에서는 Amazon SageMaker Studio IDE(Integrated Development Environment)를 시작해 봅니다. 실습 시간은 약 10분 소요됩니다.
 
 1. AWS [관리 콘솔](https://console.aws.amazon.com/console/home)에 Sign in 합니다. 만약 AWS 측에서 Event Engine을 사용하여 임시 아이디를 생성한 경우, 제공 받으신 URL을 여시고 Team Hash code를 입력하시면 됩니다.
 

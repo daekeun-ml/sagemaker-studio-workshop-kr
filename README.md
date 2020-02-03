@@ -17,6 +17,7 @@
 
 ### Module 1. Amazon SageMaker Studio
 Amazon SageMaker Studio IDE(Integrated Development Environment)를 시작해 봅니다.
+- [Getting Started](studio/lab1.md)
 
 ### Module 2. Amazon SageMaker Autopilot
 탐색적 데이터 분석(EDA), 피쳐 엔지니어링, 파이프라인 추천, 하이퍼파라메터 튜닝을 자동으로 수행하는 완전 관리형 AutoML 서비스인 Amazon SageMaker Autopilot을 사용하여 고객 이탈 예측 모델을 자동으로 생성해 봅니다.

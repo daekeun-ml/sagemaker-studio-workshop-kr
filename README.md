@@ -17,7 +17,6 @@
 
 ### Module 1. Amazon SageMaker Studio
 Amazon SageMaker Studio IDE(Integrated Development Environment)를 시작해 봅니다.
-- [Getting Started](studio/lab1.md)
 
 ### Module 2. Amazon SageMaker Autopilot
 탐색적 데이터 분석(EDA), 피쳐 엔지니어링, 파이프라인 추천, 하이퍼파라메터 튜닝을 자동으로 수행하는 완전 관리형 AutoML 서비스인 Amazon SageMaker Autopilot을 사용하여 고객 이탈 예측 모델을 자동으로 생성해 봅니다.
@@ -25,7 +24,7 @@ Amazon SageMaker Studio IDE(Integrated Development Environment)를 시작해 봅
 
 ### Module 3. Amazon SageMaker Debugger
 학습 중 실시간으로 디버그 후크(Debug Hook)로 캡처된 텐서를 분석하고 이상점들을 확인하여 모델의 문제를 감지할 수 있는 Amazon Sagemaker Debugger를 사용하여 손글찌 숫자 인식 모델을 MNIST 데이터셋과 TensorFlow로 학습해 봅니다.
-- [Getting Started](debugger/tensorflow_builtin_rule/tf-mnist-builtin-rule.ipynb)
+- [Getting Started](debugger/lab3.md)
 
 ### Module 4. Amazon SageMaker Model Monitor
 모델 배포 이후 데이터 드리프트, 휴먼 에러 등으로 인해 데이터 품질이 변하는 것을 실시간으로 모니터링하는 SageMaker Model Monitor 서비스를 사전 학습된 고객 이탈 예측 모델에 대해 실습해 봅니다.

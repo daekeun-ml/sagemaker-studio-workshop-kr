@@ -1,13 +1,13 @@
-# Module 2. SageMaker Autopilot
+# Module 2. Amazon SageMaker Autopilot
 
-이 모듈에서는 SageMaker Studio IDE 상에서 Churn prediction 데이터셋을 SageMaker Autopilot으로 쉽고 빠르게 모델링할 수 있는 방법에 대해 실습해 보겠습니다.
-본 모듈의 총 실습 시간은 약 1시간 소요입니다.
+이 모듈에서는 Amazon SageMaker Studio IDE 상에서 Churn prediction 데이터셋을 Amazon SageMaker Autopilot으로 쉽고 빠르게 모델링할 수 있는 방법에 대해 실습해 보겠습니다.
+본 모듈의 총 실습 시간은 약 1시간 소요됩니다.
 
 ### 목차
 - Step 1. 데이터셋 준비 및 S3 업로드
-- Step 2. SageMaker Autopilot 설정하기
-- Step 3. SageMaker Autopilot 체험하기
-- Step 4. SageMaker Experiment 체험하기 
+- Step 2. Amazon SageMaker Autopilot 설정하기
+- Step 3. Amazon SageMaker Autopilot 체험하기
+- Step 4. Amazon SageMaker Experiment 체험하기 
 - Optional Step. 모델 배포 및 SageMaker Model Monitor 체험하기
 
 Churn Prediction 데이터셋에 대한 자세한 내용은 아래를 참조하세요.
@@ -19,11 +19,11 @@ Churn Prediction 데이터셋에 대한 자세한 내용은 아래를 참조하�
 
 ## Step 1. 데이터셋 준비 및 S3 업로드
 ---
-SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나 txt 포맷의 정형 데이터셋을 준비 후 데이터셋을 학습셋/검증셋(Training set/Validation set)으로 분리하여 S3에 업로드합니다. 본 step에서 이 작업을 수행해 보겠습니다.
+Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단합니다. csv나 txt 포맷의 정형 데이터(tabular data)를 준비 후, 데이터셋을 학습셋/검증셋(Training set/Validation set)으로 분리하여 S3에 업로드합니다. 본 step에서 이 작업을 수행해 보겠습니다.
 
 실습 시간은 약 5분 소요됩니다.
 
-1. SageMaker Studio 메뉴에서 왼쪽 상단의 아이콘 중 폴더 모양의 아이콘을 클릭하여 
+1. Amazon SageMaker Studio 메뉴에서 왼쪽 상단의 아이콘 중 폴더 모양의 아이콘을 클릭하여 
 `sagemaker-studio-workshop-kr/autopilot` 경로로 이동합니다.
 1. 하단의 파일들 중 `step1-prepare-dataset.ipynb`를 더블 클릭하여 Jupyter 노트북을 실행합니다.
 
@@ -61,13 +61,13 @@ SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단합니�
     **<center>Figure 3-3. Code Cell 실행 완료 화면.</center>**    
 
 
-## Step 2. SageMaker Autopilot 설정하기
+## Step 2. Amazon SageMaker Autopilot 설정하기
 ---
-데이터가 준비되었다면, 여러분은 One-click으로 SageMaker Autopilot을 쉽게 시작할 수 있습니다. 본 step에서 이 작업을 수행해 보겠습니다. 
+데이터가 준비되었다면, 여러분은 One-click으로 Amazon SageMaker Autopilot을 쉽게 시작할 수 있습니다. 본 step에서 이 작업을 수행해 보겠습니다. 
 
 실습 시간은 약 5-10분 소요됩니다.
 
-1. SageMaker Studio 화면의 왼쪽 상단의 아이콘 중 컵 모양의 아이콘 클릭 후, `Create Experiment` 버튼을 클릭합니다. (`Figure 4.` 참조)
+1. Amazon SageMaker Studio 화면의 왼쪽 상단의 아이콘 중 컵 모양의 아이콘 클릭 후, `Create Experiment` 버튼을 클릭합니다. (`Figure 4.` 참조)
 
     ![img4](./images/fig04.png)
     **<center>Figure 4. Create Experiment 선택 화면.</center>**    
@@ -110,7 +110,7 @@ SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단합니�
 
 <br>
 
-## Step 3. SageMaker Autopilot 체험하기
+## Step 3. Amazon SageMaker Autopilot 체험하기
 ---
 자동으로 생성된 Jupyter 노트북들을 살펴본 후, Candidate generation notebook을 수정하여 피쳐 엔지니어링(Feature Engineering)-모델링(Modeling)-하이퍼파라메터 최적화(Hyperparameter Optimization) 과정을 자동으로 수행해 보겠습니다.
 
@@ -195,11 +195,11 @@ SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단합니�
 
 <br>
 
-## Step 4. SageMaker Experiment 체험하기 
+## Step 4. Amazon SageMaker Experiment 체험하기 
 ---
-여러분은 데이터셋, 알고리즘, 하이퍼파라메터(hyper-parameters) 및 평가 지표(metrics)들을 포함한 실험의 아티팩트(artifacts)를 SageMaker Experiment로 추적할 수 있습니다. SageMaker Autopilot은 SageMaker Experiment가 포함되어 있기 때문에 별도의 설정 없이 SageMaker Experiment를 쉽게 체험해 보실 수 있습니다.
+여러분은 데이터셋, 알고리즘, 하이퍼파라메터(hyper-parameters) 및 평가 지표(metrics)들을 포함한 실험의 아티팩트(artifacts)를 Amazon SageMaker Experiment로 추적할 수 있습니다. Amazon SageMaker Autopilot은 Amazon SageMaker Experiment가 포함되어 있기 때문에 별도의 설정 없이 Amazon SageMaker Experiment를 쉽게 체험해 보실 수 있습니다.
 
-본 step에서 하이퍼파라메터 튜닝 시 개별 생성된 Trial들을 쉽게 interactive 툴로 visualize하는 방법을 수행해 보겠습니다.
+본 step에서 하이퍼파라메터 튜닝 시 개별 생성된 Trial들을 쉽게 interactive 툴로 시각화하는 방법을 수행해 보겠습니다.
 
 실습 시간은 약 5-10분 소요됩니다.
 
@@ -244,14 +244,14 @@ SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단합니�
 
 1. 위의 과정와 유사한 방법으로 자유롭게 차트를 직접 추가해 보세요.
 
-## Optional Step. 모델 배포 및 SageMaker Model Monitor 체험하기
+## Optional Step. 모델 배포 및 Amazon SageMaker Model Monitor 체험하기
 ---
 본 step은 10분 가량의 추가 실습 시간이 요구되며, 필수 항목은 아닙니다.
 핸즈온랩에 여유 시간이 있을 때만 수행하시면 됩니다. 
 
 1. Candidate generation notebook의 마지막 Code Cell을 실행합니다. 해당 Cell의 코드는
 `pipeline_model.deploy(...)`이며, 모델 실시간 배포에 필요한 Endpoint를 생성하므로 수행 시간은 약 5~10분 소요됩니다. (`Figure 23.` 참조) <br>
-또한, SageMaker Autopilot은 이 과정에서 Model Monitor Jupyter 노트북도 자동으로 생성합니다. 
+또한, Amazon SageMaker Autopilot은 이 과정에서 Model Monitor Jupyter 노트북도 자동으로 생성합니다. 
 
     ![img23](./images/fig23.png)
     **<center>Figure 23. Endpoint 생성.</center>**  
@@ -271,7 +271,7 @@ SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단합니�
 1. 좌측의 아이콘들 중 아래에서 2번째 아이콘을 클릭 후, `AutoML-autopilot--..` endpoint를 클릭하여 자동으로 생성된 SageMaker Model Monitor Jupyter 노트북을 확인합니다. (`Figure 25.` 참조)
 
     ![img25](./images/fig25.png)
-    **<center>Figure 25. SageMaker Model Monitor Jupyter 노트북 화면.</center>**  
+    **<center>Figure 25. Amazon SageMaker Model Monitor Jupyter 노트북 화면.</center>**  
 
 수고하셨습니다. 이상으로 본 모듈의 실습 과정을 마무리 하셨습니다. 워크샵 이후 발생되는
 비용을 방지하기 위해 서비스 종료 가이드를 통해 사용하신 리소스들을 모두 종료/삭제 해주십시오.

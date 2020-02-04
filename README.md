@@ -31,5 +31,9 @@ Amazon SageMaker Studio IDE(Integrated Development Environment)를 시작해 봅
 모델 배포 이후 데이터 드리프트, 휴먼 에러 등으로 인해 데이터 품질이 변하는 것을 실시간으로 모니터링하는 SageMaker Model Monitor 서비스를 사전 학습된 고객 이탈 예측 모델에 대해 실습해 봅니다.
 - [Getting Started](model-monitor/lab4.md)
 
+### FAQ. Amazon SageMaker Studio 리소스 제거 
+Amazon SageMaker Studio 리소스 제거에 대해 안내 드립니다. Event Engine으로 임시계정을 받으신 분들은 본 과정을 진행하지 않으셔도 됩니다. 
+- [Getting Started](delete/README.md)
+
 ## License Summary
 이 샘플 코드는 MIT-0 라이센스에 따라 제공됩니다. LICENSE 파일을 참조하십시오.

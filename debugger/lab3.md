@@ -6,7 +6,7 @@ Amazon SageMaker Debugger는 학습 과정을 지속적으로 모니터링하여
 - SageMaker built-in Rules 사용법
 - (Optional & Advanced) Cloudwatch Events for Rules<br>
 
-참고로, 본 모듈의 실습 시간은 약 20분이 소요됩니다. (Optinoal Step까지 수행 시는 약 40분이 소요됩니다.)
+참고로, 본 모듈의 실습 시간은 약 30분이 소요됩니다. (Optinoal Step까지 수행 시는 약 50분이 소요됩니다.)
 
 ### 목차
 - Step 1. Amazon SageMaker Debugger 개요

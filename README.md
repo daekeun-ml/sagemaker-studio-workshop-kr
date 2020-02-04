@@ -10,7 +10,7 @@
 ### Requirements 
 - AWS Region: **Ohio** (필수)
 - Browser: 최신 버전의 **Chrome, Firefox**를 사용하세요.
-- 주의 사항: 노트북(Notebook) 안의 Code Cell에서 코드 실행 후 결과 값이 나오는 데는 수 초가 걸리며, 훈련 Job을 실행하는 경우 수 분에서 수십 분이 걸릴 수도 있습니다. 
+- 주의 사항: 노트북(Notebook) 안의 Code Cell에서 코드 실행 후 결과 값이 나오는 데는 수 초가 걸리며, 학습 Job을 실행하는 경우 수 분에서 수십 분이 걸릴 수도 있습니다. 
 
 ## Agenda
 
@@ -23,7 +23,7 @@ Amazon SageMaker Studio IDE(Integrated Development Environment)를 시작해 봅
 - [Getting Started](autopilot/lab2.md)
 
 ### Module 3. Amazon SageMaker Debugger
-학습 중 실시간으로 디버그 후크(Debug Hook)로 캡처된 텐서를 분석하고 이상점들을 확인하여 모델의 문제를 감지할 수 있는 Amazon Sagemaker Debugger를 사용하여 손글찌 숫자 인식 모델을 MNIST 데이터셋과 TensorFlow로 학습해 봅니다.
+학습 중 실시간으로 디버그 후크(Debug Hook)로 캡처된 텐서를 분석하고 이상점들을 확인하여 모델의 문제를 감지할 수 있는 Amazon Sagemaker Debugger를 사용하여 손글씨 숫자 인식 모델을 MNIST 데이터셋과 TensorFlow로 학습해 봅니다.
 - [Getting Started](debugger/lab3.md)
 
 ### Module 4. Amazon SageMaker Model Monitor

@@ -5,7 +5,8 @@
 
 이에, AWS에서는 ML 워크플로를 쉽고 빠르게 구축하고자 하는 데이터 사이언티스트 및 ML 엔지니어 분들을 위해 Amazon SageMaker Studio Hands-on Lab을 준비했습니다. 이 워크샵을 통해 Amazon SageMaker Studio상에서 notebook instance를 생성하고 샘플 Jupyter 노트북을 실습하면서 SageMaker의 기능들을 알아보도록 합니다. 
 
-실습은 총 4개 모듈로 구성되어 있으며, 1번 모듈 완료 후 2번 모듈을 순서대로 진행하셔야 합니다. 3번, 4번 모듈은 원하는 순서대로 진행하실 수 있습니다.
+실습은 총 4개 모듈로 구성되어 있으며, 1번 모듈 완료 후 2번 모듈을 순서대로 진행하셔야 합니다. 3번, 4번 모듈은 원하는 순서대로 진행하실 수 있습니다.<br>
+4개 모듈 모두 진행 시, 실습 시간은 약 3시간~3시간 반이 소요됩니다. (숙련자의 경우 1시간 반~2시간 정도 소요됩니다.)
 
 ### Requirements 
 - AWS Region: **Ohio** (필수)
@@ -28,7 +29,7 @@ Amazon SageMaker Studio IDE(Integrated Development Environment)를 시작해 봅
 
 ### Module 4. Amazon SageMaker Model Monitor
 모델 배포 이후 데이터 드리프트, 휴먼 에러 등으로 인해 데이터 품질이 변하는 것을 실시간으로 모니터링하는 SageMaker Model Monitor 서비스를 사전 학습된 고객 이탈 예측 모델에 대해 실습해 봅니다.
-- [Getting Started](model-monitor/SageMaker-ModelMonitoring.ipynb)
+- [Getting Started](model-monitor/lab4.md)
 
 ## License Summary
 이 샘플 코드는 MIT-0 라이센스에 따라 제공됩니다. LICENSE 파일을 참조하십시오.

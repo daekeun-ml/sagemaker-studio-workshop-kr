@@ -16,7 +16,7 @@ Amazon SageMaker Debugger는 학습 과정을 지속적으로 모니터링하여
 <br>
 
 ## Step 1. Amazon SageMaker Debugger 개요
-
+---
 ### Concepts
 본 실습에 들어가기 전에, Amazon SageMaker Debugger의 주요 컨셉을 살펴보도록 하겠습니다.
 

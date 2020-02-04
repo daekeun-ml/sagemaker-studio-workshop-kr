@@ -14,7 +14,7 @@
 <br>
 
 ## Step 1. Amazon SageMaker Monitor Monitor 개요
-
+---
 ### 특징
 
 - 엔디포인트로 전송되는 입력 데이터 및 모델 추론(inference) 결과와 메타데이터를 캡처할 수 있으며, 캡처 결과는 S3에 저장됩니다.

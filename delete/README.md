@@ -1,10 +1,10 @@
-# SageMaker Studio 리소스 제거 
+# FAQ. Amazon SageMaker Studio 리소스 제거 
 
-***[주의!] Event Engine으로 생성한 임시 AWS 계정이 아닌, 여러분의 계정으로 본 워크샵을 실습한다면, 워크샵 이후 아래 지침을 따라 리소스를 직접 삭제해 주셔야 합니다.***
+***[주의!] Event Engine으로 생성한 임시 AWS 계정이 아닌 여러분의 계정으로 본 워크샵을 실습한다면, 워크샵 이후 아래 지침을 따라 리소스를 직접 삭제해 주셔야 합니다.***
 
 Amazon SageMaker Studio Preview(2020년 2월 1일 기준)에서는 현재 AWS 콘솔에서 SageMaker Studio와 domain에 대한 사용자 프로필을 직접 삭제할 수 없습니다.
 또한, 간헐적으로 `Figure 1.` 처럼 JupyterServer app이 죽는 경우가 있어서 이 경우에도 삭제가 필요합니다.<br>
-따라서, 본 문서에서 AWS CLI로 이를 삭제하는 법에 대해 안내 드리겠습니다.
+따라서, 본 문서에서 AWS CLI(Command-line Interface)로 이를 삭제하는 법에 대해 안내 드리겠습니다.
 
 ![img1](./images/fig01.png)
 **<center>Figure 1. JupyterServer app 에러 화면.</center>**    

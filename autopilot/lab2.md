@@ -262,12 +262,6 @@ Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단
     ![img24](./images/fig24.png)
     **<center>Figure 24. Endpoint 생성 확인.</center>**  
 
-1. 마지막 Markdown Cell의 `endpoint console page`를 클릭하여(`Figure 23.`의 빨간색 테두리 참조) Amazon SageMaker 콘솔 화면으로 이동합니다.
-`Figure 24.`의 화면에서 Endpoint가 생성된 것을 확인하실 수 있습니다.
-
-    ![img24](./images/fig24.png)
-    **<center>Figure 24. Endpoint 생성 확인.</center>**  
-
 1. 좌측의 아이콘들 중 아래에서 2번째 아이콘을 클릭 후, `AutoML-autopilot--..` endpoint를 클릭하여 자동으로 생성된 SageMaker Model Monitor Jupyter 노트북을 확인합니다. (`Figure 25.` 참조)
 
     ![img25](./images/fig25.png)

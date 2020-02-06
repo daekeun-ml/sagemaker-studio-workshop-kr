@@ -209,7 +209,7 @@ Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단
     ![img19](./images/fig19.png)
     **<center>Figure 19. Trial component list 열기.</center>**   
 
-1. 가장 최근에 생성된 Training job 8개(ObjectiveMetric이 존재하는 job들)를 복수 선택하여(Shift+마우스 왼쪽 버튼을 클릭하면 편리합니다.) 마우스 오른쪽 버튼 클릭 후, `Open in trial details`를 선택합니다. (`Figure 20.` 참조)
+1. 가장 최근에 생성된 Training job 8개(ObjectiveMetric이 존재하는 job들)들을 `Shift+마우스 왼쪽 버튼`으로 복수 선택 후, `Add Chart` 버튼을 클릭합니다. (`Figure 20.` 참조)
 
     ![img20](./images/fig20.png)
     **<center>Figure 20. Trial 선택.</center>**  

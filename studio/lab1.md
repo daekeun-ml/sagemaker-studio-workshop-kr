@@ -60,4 +60,22 @@
     ![img11](./images/fig11.png)
     **<center>Figure 11. Amazon SageMaker Studio 초기 화면.</center>**    
 
+1. 핸즈온에 필요한 코드를 GitHub에서 다운로드합니다. 상단 메뉴의 `Git`- `Git Command in Terminal`을 클릭하여 터미널(terminal)로 접속합니다. (`Figure 12.` 참조)
+
+    ![img12](./images/fig12.png)
+    **<center>Figure 12. Git Command in Terminal.</center>**    
+
+1. 터미널 화면에서 아래 명령어를 복사 후 붙여넣기 후 엔터(Enter)키를 치면 코드 다운로드가 완료됩니다. 다운로드가 정상적으로 완료되었다면, 좌측 화면에 
+`sagemaker-studio-workshop-kr` 폴더가 나타납니다. (`Figure 13.` 참조)
+    ```
+    git clone https://github.com/daekeun-ml/sagemaker-studio-workshop-kr.git
+    ```
+    ![img13](./images/fig13.png)
+    **<center>Figure 13. 핸즈온 코드 다운로드 완료 화면.</center>**    
+
+1. `Figure 13.`의 `sagemaker-studio-workshop-kr` 폴더를 더블클릭하여 관련 파일과 폴더들이 정상적으로 생성되었는지 확인합니다. (`Figure 14.` 참조)
+
+    ![img14](./images/fig14.png)
+    **<center>Figure 14. 핸즈온 코드.</center>**    
+
 수고하셨습니다. 모듈 1을 완료하였습니다.

@@ -52,7 +52,7 @@ $ aws --region us-east-2 sagemaker delete-app --domain-id d-dt4cmt1evrhr --user-
 
 ## Domain에 대한 사용자 프로필 삭제
 
-아래 CLI로 사용자 프로필의 유무를 확인합니다. 참고로, 사용자 프로필음 AWS 콘솔에서도 확인하실 수 있습니다.
+아래 CLI로 사용자 프로필(User profile)의 유무를 확인합니다. 참고로, 사용자 프로필은 AWS 콘솔에서도 확인하실 수 있습니다.
 ```shell
 $ aws --region us-east-2 sagemaker list-user-profiles
 ```

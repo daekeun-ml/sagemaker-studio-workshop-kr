@@ -9,12 +9,12 @@
     ![img1](./images/fig01.png)
     **<center>Figure 1. 리전 확인.</center>**    
 
-1. Amazon SageMaker Studio로 접속합니다. 좌측 메뉴에서 Amazon SageMaker Studio를 클릭하거나, 우측의 Launch Amazon SageMaker Studio를 클릭하세요. (`Figure 2.` 참조)
+1. Amazon SageMaker 서비스 페이지로 이동합니다. (`Figure 2.` 참조)
 
     ![img2](./images/fig02.png)
-    **<center>Figure 2. Amazon SageMaker Studio 메뉴 이동.</center>**     
+    **<center>Figure 2. Amazon SageMaker.</center>**     
 
-1. Figure 3.을 참조하여 `Start with IAM`을 클릭하세요. 참고로, SSO(Single Sign-On)으로 AWS 콘솔 접근 없이 곧바로 Amazon SageMaker Studio에 접속 가능하지만, 본 핸즈온에서는 원활한 실습을 위해 IAM(Identity and Access Management)으로 실습하겠습니다.
+1. Figure 3.을 참조하여 `Amazon SageMaker Studio` 메뉴 클릭 후 우측의 `AWS Identity and Access Management(IAM)` 라디오 버튼을 클릭하세요. 참고로, SSO(Single Sign-On)으로 AWS 콘솔 접근 없이 곧바로 Amazon SageMaker Studio에 접속 가능하지만, 본 핸즈온에서는 원활한 실습을 위해 IAM(Identity and Access Management)으로 실습하겠습니다.
 
     ![img3](./images/fig03.png)
     **<center>Figure 3. Start with IAM.</center>**    
@@ -31,19 +31,23 @@
 
     ![img6](./images/fig06.png)
     **<center>Figure 6. S3 bucket 설정.</center>**    
- 
 
-1. Amazon SageMaker Studio 화면의 Summary 항목에서 domain ID가 정상적으로 생성되었는지 확인하고, Status가 `Pending`에서 `InService`로 변경될 때까지 기다립니다(약 4~5분 소요). 이후 `Figure 7.` 처럼 `InService`로 변경되었다면 Profile management를 클릭 후, `Add user profile` 버튼을 클릭합니다.
+1. 모든 설정이 완료되었다면 우측 하단의 `Submit` 버튼을 클릭하세요.
+
+1. Amazon SageMaker Studio Control panel 에서 Studio ID(Domain ID)가 정상적으로 생성되었는지 확인하고, Status가 `Pending`에서 `Ready`로 변경될 때까지 기다립니다(약 4~5분 소요). 이후 `Figure 7-1.` 처럼 `Ready`로 변경되었다면 우측 상단의 `Add user` 버튼을 클릭합니다. (`Figure 7.`, `Figure 7-1.` 참조)
 
     ![img7](./images/fig07.png)
-    **<center>Figure 7. Domain ID 생성.</center>**    
+    **<center>Figure 7. Studio ID(Domain ID) 생성 중.</center>**    
 
-1. `Figure 8.`처럼 User profile의 User profile name 입력란에 `[YOUR-OWN-NAME]`(예: gildong)을 입력 후, `Submit` 버튼을 클릭합니다.
+    ![img7](./images/fig07-1.png)
+    **<center>Figure 7-1. Studio ID(Domain ID) 생성 완료.</center>**        
+
+1. `Figure 8.`처럼 Amazon SageMaker Studio Control Panel의 User name 입력란에 `[YOUR-OWN-NAME]-hol`(예: gildong-hol)을 입력 후, `Submit` 버튼을 클릭합니다.
 
     ![img8](./images/fig08.png)
     **<center>Figure 8. Add user profile.</center>**    
 
-1. Amazon SageMaker Studio 화면에서 `User profile`을 클릭 후, 생성한 User profile의 라디오버튼이 선택되었는지 확인 후, `Open Amazon SageMaker Studio` 버튼을 클릭합니다.
+1. Amazon SageMaker Studio Control Panel 화면에서 User가 등록되었는지 확인 후, 우측의 `Open Studio` 버튼을 클릭합니다.
 
     ![img9](./images/fig09.png)
     **<center>Figure 9. Open Amazon SageMaker Studio.</center>**    

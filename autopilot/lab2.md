@@ -39,7 +39,7 @@ Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단
     **<center>Figure 3. step1-prepare-dataset.ipynb Jupyter notebook 화면.</center>**    
 
 1. Jupyter 노트북은 코드와 주석을 같이 저장하며, 두 가지의 Cell(Code Cell 과 Markdown Cell)이 있습니다. Code 를 실행하려면 `Figure 3-1.`을 참조하여 실행 버튼을 클릭하거나, 키보드 단축키
-`Control+Enter`나 `Control+Enter`를 실행합니다. 참고로 본 핸즈온 랩은 실제 사용하는 실행 후 셀을 이동하는 `Shift+Enter` 단축키를 권장합니다.
+`Control+Enter`나 `Shift+Enter`를 실행합니다. 참고로 본 핸즈온 랩은 실제 사용하는 실행 후 셀을 이동하는 `Shift+Enter` 단축키를 권장합니다.
 
     ![img3-1](./images/fig03-1.png)
     **<center>Figure 3-1. Code Cell 실행 버튼 화면.</center>**    
@@ -86,7 +86,7 @@ Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단
 
     - Target attribute name 에서 `Churn?`을 입력하세요. 
     - S3 location for output data에서 `s3://[YOUR-OWN-BUCKET]/automl-house-price/output`을 입력하세요.<br>
-    (예: `s3://sagemaker-studio-daekeun/automl-house-price/output`)
+    (예: `s3://sagemaker-studio-gildong/automl-house-price/output`)
 
     - Select the machine learning problem type 에서 `Binary classification`을 선택하세요.
 
@@ -135,7 +135,7 @@ Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단
     ![img10](./images/fig10.png)
     **<center>Figure 10. Candidate Definition notebook 화면 2.</center>**   
 
-1. Jupyter 노트북 사본을 클릭한 다음, Select Kernel 창에서 `Figure 11.`과 같이 `Python 3 (Base Python)`을 선택하고 Select 버튼을 클릭합니다.
+1. Jupyter 노트북 사본을 클릭한 다음, Select Kernel 창에서 `Figure 11.`과 같이 `Python 3 (Data Science)`을 선택하고 Select 버튼을 클릭합니다.
 
     ![img11](./images/fig11.png)
     **<center>Figure 11. Kernel 선택 화면.</center>**    
@@ -152,8 +152,8 @@ Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단
     ![img13](./images/fig13.png)
     **<center>Figure 13. Cell 삭제 안내.</center>**    
 
-1. `Selected Candidates`가 표시된 Markdown Cell 다음의 Code Cell에서
-`automl_interactive_runner.display_candidates()`을 수행 후, `Figure 14.` 처럼 2개의 행(row)를 리턴하는지 확인합니다.
+1. `Selected Candidates`가 표시된 Markdown Cell 전까지 Code Cell을 순서대로 실행시킵니다. 그리고 `Selected Candidates`가 표시된 Code Cell에서
+`automl_interactive_runner.display_candidates()`을 수행 후, `Figure 14.` 처럼 2개의 행(row)를 리턴하는지 확인합니다. (`Shift+Enter` 단축키로 Code Cell을 순서대로 실행하실 수 있습니다.)
 
     ![img14](./images/fig14.png)
     **<center>Figure 14. Candidates 리스트.</center>**    
@@ -195,7 +195,7 @@ Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단
 
 <br>
 
-## Step 4. Amazon SageMaker Experiment 체험하기 
+## Step 4. Amazon SageMaker Experiment 체험하기
 ---
 여러분은 데이터셋, 알고리즘, 하이퍼파라메터(hyper-parameters) 및 평가 지표(metrics)들을 포함한 실험의 아티팩트(artifacts)를 Amazon SageMaker Experiment로 추적할 수 있습니다. Amazon SageMaker Autopilot은 Amazon SageMaker Experiment가 포함되어 있기 때문에 별도의 설정 없이 Amazon SageMaker Experiment를 쉽게 체험해 보실 수 있습니다.
 
@@ -203,7 +203,7 @@ Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단
 
 실습 시간은 약 5-10분 소요됩니다.
 
-1. Code Cell 왼쪽의 “[*]” 라는 부분이 숫자로 변경되면 좌측의 플라스크 아이콘을 클릭 후, 
+1. `Run Multi-Algorithm Tuning이 표시된 Markdown Cell` 다음의 Code Cell에서, Code Cell 왼쪽의 “[*]” 라는 부분이 숫자로 변경되면 좌측의 플라스크 아이콘을 클릭 후, 
 `Unassigned trial components`에 마우스 커서를 위치하고 오른쪽 버튼을 클릭하여 `Open in trial component list`를 선택합니다. (`Figure 19.` 참조)
 
     ![img19](./images/fig19.png)

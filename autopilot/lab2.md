@@ -262,10 +262,13 @@ Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단
     ![img24](./images/fig24.png)
     **<center>Figure 24. Endpoint 생성 확인.</center>**  
 
-1. 좌측의 아이콘들 중 아래에서 2번째 아이콘을 클릭 후, `AutoML-autopilot--..` endpoint를 클릭하여 자동으로 생성된 SageMaker Model Monitor Jupyter 노트북을 확인합니다. (`Figure 25.` 참조)
+1. 좌측의 아이콘들 중 아래에서 2번째 아이콘을 클릭 후, `AutoML-autopilot--..` endpoint를 클릭 후, `Enable monitoring` 버튼을 클릭합니다. 이후, 자동으로 생성된 SageMaker Model Monitor Jupyter 노트북을 확인합니다. (`Figure 25.`, `Figure 26.` 참조)
 
-    ![img25](./images/fig25.png)
-    **<center>Figure 25. Amazon SageMaker Model Monitor Jupyter 노트북 화면.</center>**  
+    ![img25](./images/fig25.png) 
+    **<center>Figure 25. Enable monitoring.</center>**  
+
+    ![img26](./images/fig26.png)
+    **<center>Figure 26. Amazon SageMaker Model Monitor Jupyter 노트북 화면.</center>**  
 
 수고하셨습니다. 이상으로 본 모듈의 실습 과정을 마무리 하셨습니다. 워크샵 이후 발생되는
 비용을 방지하기 위해 서비스 종료 가이드를 통해 사용하신 리소스들을 모두 종료/삭제 해주십시오.

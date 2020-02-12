@@ -9,6 +9,16 @@ Amazon SageMaker Studio Preview(2020년 2월 1일 기준)에서는 현재 AWS �
 ![img1](./images/fig01.png)
 **<center>Figure 1. JupyterServer app 에러 화면.</center>**    
 
+## AWS CLI 업그레이드
+AWS CLI 버전을 최신 버전으로 업그레이드합니다. 
+```
+$ pip install --upgrade awscli
+```
+
+예:
+- aws-cli/1.16.298, Python/3.7.3, Darwin/18.7.0, botocore/1.12.253: aws sagemaker list-apps 없음
+- aws-cli/1.17.14,  Python/3.7.3, Darwin/18.7.0, botocore/1.14.14: aws sagemaker list-apps 있음
+
 ## Domain 관련 응용 프로그램 확인 및 제거
 
 아래 CLI로 응용 프로그램의 유무를 확인합니다.

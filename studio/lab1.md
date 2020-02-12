@@ -2,6 +2,29 @@
 
 이 모듈에서는 Amazon SageMaker Studio IDE(Integrated Development Environment)를 시작해 봅니다. 실습 시간은 약 10분 소요됩니다.
 
+### 목차
+- Step 1. Concepts
+- Step 2. Amazon SageMaker Studio 시작하기
+
+<br>
+
+## Step 1. Concepts
+---
+본 실습에 들어가기 전에, Amazon SageMaker Studio의 주요 컨셉을 살펴보도록 하겠습니다.
+
+#### Studio Domain
+- VPC(Virtual Private Cloud) Config 및 기본 IAM(Identity and Access Management) Execution Role과 같은 권한이 부여된 사용자 및 보안 구성 목록입니다.
+- 리전 당 하나의 도메인으로 제한됩니다.
+#### User profile
+- 각 user profile에는 공유 EFS(Amazon Elastic File System)가 있는 자체 전용 컴퓨팅 리소스가 있습니다. 즉, 기본 스토리지로 EFS를 사용합니다.
+- 각 user profile은 Execution Role과 연결될 수도 있습니다.
+#### Auth modes
+- AWS SSO(Single Sign-On): 사용자는 AWS 콘솔과 상호 작용할 필요가 없습니다.
+- AWS IAM(Identity and Access Management)
+
+## Step 2. Amazon SageMaker Studio 시작하기
+---
+
 1. AWS [관리 콘솔](https://console.aws.amazon.com/console/home)에 Sign in 합니다. 만약 AWS 측에서 Event Engine을 사용하여 임시 아이디를 생성한 경우, 제공 받으신 URL(https://dashboard.eventengine.run/)을 여시고 Team Hash code를 입력하시면 됩니다.
 
 1. 리전(Region)이 `Ohio`로 되어 있는지 확인합니다. 만약 다른 리전으로 설정되어 있다면, `Ohio`로 변경해 주세요. (`Figure 1.` 참조)

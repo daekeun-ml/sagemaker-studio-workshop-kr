@@ -75,18 +75,24 @@ Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단
 1. CLI나 API 호출 없이 콘솔 상에서 빠르고 간단하게 Autopilot을 수행해 보겠습니다. 
 `Figure 5.`를 참조하여 아래의 지침대로 설정 항목의 값들을 입력해 주세요.
 
-    ![img5](./images/fig05.png)
+    ![img5](./images/fig05-1.png)
     **<center>Figure 5. Autopilot 생성 화면.</center>**   
 
     - Experiment Name 에서 `autopilot-hol-[YOUR-OWN-NAME]`을 입력하세요.<br>
     (예: `autopilot-hol-gildong`)
 
-    - S3 location of input data 에서 `s3://[YOUR-OWN-BUCKET]/automl-house-price/input/automl-train.csv`을 입력하세요.<br>
-    (예: `s3://sagemaker-studio-gildong/automl-house-price/input/automl-train.csv`)
+    - **Input data location (S3 bucket)** 에서 "Find S3 bucket" 을 선택합니다.
+	- (1) "S3 bucket name" 에서 sagemaker-XXXX-XXXXX (예: sagemaker-us-east-2-101606582575) 를 선택합니다. (기존에 다른 이름으로 버킷을 생성하였다고 하면, 그 버킷을 선택하세요)
+	- (2) "S3 object key prefix" 에서 automl-house-price/input/automl-train.csv 를 선택합니다.
 
     - Target attribute name 에서 `Churn?`을 입력하세요. 
-    - S3 location for output data에서 `s3://[YOUR-OWN-BUCKET]/automl-house-price/output`을 입력하세요.<br>
-    (예: `s3://sagemaker-studio-gildong/automl-house-price/output`)
+
+    - **Output data location (S3 bucket)** 에서 "Find S3 bucket" 을 선택합니다.
+	- (1) S3 bucket name에서 sagemaker-XXXX-XXXXX (예: sagemaker-us-east-2-101606582575) 를 선택합니다. (기존에 다른 이름으로 버킷을 생성하였다고 하면, 그 버킷을 선택하세요)
+	- (2) "Enter S3 bucket location" 을 선택합니다.
+		- "S3 bucket address" 안에
+		- "automl-house-price/output"를 s3://sagemaker-XXXX-XXXXX/ 이후에 복사합니다. 최종적으로 이와 같이 되어야 합니다. (예: s3://sagemaker-us-east-2-101606582575/automl-house-price/output )
+
 
     - Select the machine learning problem type 에서 `Binary classification`을 선택하세요.
 
@@ -272,3 +278,4 @@ Amazon SageMaker Autopilot을 사용하기 위한 준비 작업은 매우 간단
 
 수고하셨습니다. 이상으로 본 모듈의 실습 과정을 마무리 하셨습니다. 워크샵 이후 발생되는
 비용을 방지하기 위해 서비스 종료 가이드를 통해 사용하신 리소스들을 모두 종료/삭제 해주십시오.
+
